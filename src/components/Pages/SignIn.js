@@ -6,13 +6,25 @@ import { useMoralisWeb3Api } from "react-moralis";
 
 
 
-function SignIn() {
+function SignIn() {    
 
-    const { authenticate, isAuthenticated, isAuthenticating, user, account, logout } = useMoralis();
+ 
+
+
+    const { authenticate, isAuthenticated, isAuthenticating, user, logout } = useMoralis();
 
     useEffect(() => {
 		ETHData();
   }, [isAuthenticated]);
+
+ const ETHData = async () => {
+	if (isAuthenticated) {
+		Moralis.authenticate().then(function (user) {
+				FetchAPI();
+				console.log(user.get('ethAddress'))
+		})
+    }
+
 
   const Web3Api = useMoralisWeb3Api();
 
@@ -32,16 +44,6 @@ function SignIn() {
 
   
 
-    
-
-  const ETHData = async () => {
-
-	if (isAuthenticated) {
-		Moralis.authenticate().then(function (user) {
-				FetchAPI();
-				console.log(user.get('ethAddress'))
-		})
-    }
 
 }
 
