@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Nav, NavLink, Bars, NavMenu, NavBtn } from "./NavbarElements";
 import { ReactComponent as Icon } from "../logos/log-in-2.svg";
 import { ReactComponent as Icon2 } from "../logos/log-out-2.svg";
@@ -6,7 +6,11 @@ import { IconContext } from "react-icons";
 import { useMoralis } from "react-moralis";
 
 const Navbar = ({ toggle }) => {
-  const { isAuthenticated, logout } = useMoralis();
+  const { isAuthenticated, logout, user } = useMoralis();
+
+  useEffect(() => {
+    console.log(user);
+  }, []);
 
   const logOut = async () => {
     await logout();
@@ -27,8 +31,8 @@ const Navbar = ({ toggle }) => {
           <NavLink to="/about" activestyle="true">
             About
           </NavLink>
-          <NavLink to="/artworks" activestyle="true">
-            Artworks
+          <NavLink to="/bookshelf" activestyle="true">
+            Bookshelf
           </NavLink>
           <NavLink to="/stats" activestyle="true">
             Stats
@@ -36,6 +40,11 @@ const Navbar = ({ toggle }) => {
           <NavLink to="/contact" activestyle="true">
             Contact
           </NavLink>
+          {isAuthenticated ? (
+            <NavLink to="/writer" activestyle="true">
+              Writer
+            </NavLink>
+          ) : null}
         </NavMenu>
         <NavBtn>
           <IconContext.Provider value={{ color: "white", size: "20px" }}>

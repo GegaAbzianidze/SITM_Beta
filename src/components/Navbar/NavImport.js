@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "../Navbar/index";
 import Home from "../Pages";
-import Artworks from "../Pages/Artworks";
 import Stats from "../Pages/Stats";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
@@ -28,7 +27,6 @@ const NavImport = () => {
         <Routes>
           <Route path="/" exact={true} element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/artworks" element={<Artworks />} />
           <Route path="/stats" element={<Stats />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/signin" element={<SignIn />} />
