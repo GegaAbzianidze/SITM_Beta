@@ -46,3 +46,8 @@
   fill: white;
   cursor: pointer;
 }
+
+.Buttn {
+  background-color: transparent;
+  border: none;
+}

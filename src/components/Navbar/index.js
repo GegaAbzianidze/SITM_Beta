@@ -1,16 +1,24 @@
 import React from "react";
 import { Nav, NavLink, Bars, NavMenu, NavBtn } from "./NavbarElements";
-import { SiMicrosoftedge } from "react-icons/si";
 import { ReactComponent as Icon } from "../logos/log-in-2.svg";
+import { ReactComponent as Icon2 } from "../logos/log-out-2.svg";
 import { IconContext } from "react-icons";
+import { useMoralis } from "react-moralis";
 
 const Navbar = ({ toggle }) => {
+  const { isAuthenticated, logout } = useMoralis();
+
+  const logOut = async () => {
+    await logout();
+    console.log("logged out");
+  };
+
   return (
     <>
       <Nav>
         <NavLink to="/">
           <div style={{ fontSize: "25px", marginRight: "12px" }}>
-            <SiMicrosoftedge />
+            <Icon />
           </div>
           <h1>Logo</h1>
         </NavLink>
@@ -31,9 +39,17 @@ const Navbar = ({ toggle }) => {
         </NavMenu>
         <NavBtn>
           <IconContext.Provider value={{ color: "white", size: "20px" }}>
-            <NavLink to="/signin" activestyle="true">
-              <Icon alt="logo" className="icon-color " />
-            </NavLink>
+            {!isAuthenticated ? (
+              <NavLink to="/signin" activestyle="true">
+                <Icon alt="logo" className="icon-color" />
+              </NavLink>
+            ) : (
+              <NavLink to="/">
+                <button className="Buttn" onClick={logOut}>
+                  <Icon2 alt="logo" className="icon-color " />
+                </button>
+              </NavLink>
+            )}
           </IconContext.Provider>
         </NavBtn>
       </Nav>
