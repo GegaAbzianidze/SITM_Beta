@@ -5,13 +5,7 @@ import { useMoralisWeb3Api } from "react-moralis";
 import { useNavigate } from "react-router-dom";
 
 function SignIn() {
-  const {
-    authenticate,
-    isAuthenticated,
-    isAuthenticating,
-    user,
-    logout
-  } = useMoralis();
+  const { authenticate, isAuthenticated, user } = useMoralis();
 
   const Web3Api = useMoralisWeb3Api();
   useEffect(() => {
