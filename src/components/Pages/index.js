@@ -4,7 +4,6 @@ import "./Pages.css";
 import ButtonCorners from "../UI/Buttons/ButtonCorners";
 import ButtonTxt from "../UI/Buttons/ButtonTxt";
 import Count from "../UI/Cards/Count";
-import Vydd from "../logos/log-in-2.svg";
 
 const Home = () => {
   return (
@@ -35,7 +34,7 @@ const Home = () => {
         <div className="SpaceBeetwin"></div>
         <div className="HomeBid">
           <video autoPlay loop muted>
-            <source src={Vydd} type="video/mov" />
+            <source src="lk" type="video/mov" />
             Your browser does not support HTML5 video.
           </video>
         </div>

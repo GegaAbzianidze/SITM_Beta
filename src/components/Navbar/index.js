@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Nav, NavLink, Bars, NavMenu, NavBtn } from "./NavbarElements";
-import { ReactComponent as Icon } from "../logos/log-in-2.svg";
-import { ReactComponent as Icon2 } from "../logos/log-out-2.svg";
+import { ReactComponent as Icon } from "../Icons/log-in-2.svg";
+import { ReactComponent as Icon2 } from "../Icons/log-out-2.svg";
 import { IconContext } from "react-icons";
 import { useMoralis } from "react-moralis";
 
 const Navbar = ({ toggle }) => {
-  const { isAuthenticated, logout, user } = useMoralis();
-
-  useEffect(() => {
-    console.log(user);
-  }, []);
+  const { isAuthenticated, logout } = useMoralis();
 
   const logOut = async () => {
     await logout();
@@ -21,10 +17,7 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavLink to="/">
-          <div style={{ fontSize: "25px", marginRight: "12px" }}>
-            <Icon />
-          </div>
-          <h1>Logo</h1>
+          <h1>SITM</h1>
         </NavLink>
         <Bars onClick={toggle} />
         <NavMenu>

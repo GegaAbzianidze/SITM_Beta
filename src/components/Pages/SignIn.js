@@ -8,9 +8,7 @@ function SignIn() {
   const { authenticate, isAuthenticated, user } = useMoralis();
 
   const Web3Api = useMoralisWeb3Api();
-  useEffect(() => {
-    ETHData();
-  }, [isAuthenticated]);
+  useEffect(() => {}, [isAuthenticated]);
 
   let navigate = useNavigate();
 
@@ -48,6 +46,7 @@ function SignIn() {
         .then(function (user) {
           console.log("logged in user:", user);
           console.log(user.get("ethAddress"));
+          ETHData();
         })
         .catch(function (error) {
           console.log(error);
