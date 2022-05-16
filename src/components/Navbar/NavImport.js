@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "../Navbar/index";
 import Home from "../Pages";
+import MyBooks from "../Pages/MyBooks";
 import Stats from "../Pages/Stats";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
@@ -32,6 +33,7 @@ const NavImport = () => {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/bookshelf" element={<BookShelf />} />
           <Route path="/writer" element={<WritersPage />} />
+          <Route path="/mybooks" element={<MyBooks />} />
         </Routes>
       </Router>
 
