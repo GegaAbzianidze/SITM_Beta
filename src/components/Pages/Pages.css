@@ -1,8 +1,3 @@
-@font-face {
-  src: url(../../Bastia-Bold.otf);
-  font-family: "Bastia";
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;500&display=swap");
 
 .HomeDiv {
