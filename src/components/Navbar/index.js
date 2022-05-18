@@ -31,12 +31,6 @@ const Navbar = ({ toggle }) => {
         token_address: "0x861856B01269a03AA786d76B92BBDBDA137A728c"
       };
       const polygonNFTs = await Web3Api.account.getNFTsForContract(options);
-
-      if (polygonNFTs.total > 0) {
-        alert("succs");
-      } else {
-        alert("Error");
-      }
     };
   };
 
@@ -62,22 +56,14 @@ const Navbar = ({ toggle }) => {
           <NavLink to="/stats" activestyle="true">
             Stats
           </NavLink>
-          <NavLink to="/contact" activestyle="true">
-            Contact
-          </NavLink>
           {isAuthenticated ? (
             <>
-              {polygonNFTs > 0 ? (
-                <>
-                  <NavLink to="/writer" activestyle="true">
-                    Writer
-                  </NavLink>
-                </>
-              ) : (
-                <NavLink to="/mybooks" activestyle="true">
-                  MyBooks
-                </NavLink>
-              )}
+              <NavLink to="/writer" activestyle="true">
+                Writer
+              </NavLink>
+              <NavLink to="/mybooks" activestyle="true">
+                Mybooks
+              </NavLink>
             </>
           ) : null}
         </NavMenu>
