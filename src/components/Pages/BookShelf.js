@@ -1,15 +1,12 @@
-import React from 'react'
-import './Pages.css';
-import ArtWork from '../UI/Cards/ArtWork';
-
+import React from "react";
+import ArtWork from "../UI/Cards/ArtWork";
 
 function BookShelf() {
-
   return (
     <div>
-      <ArtWork/>
+      <ArtWork />
     </div>
   );
 }
 
-export default BookShelf
+export default BookShelf;

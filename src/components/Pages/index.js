@@ -1,9 +1,8 @@
 import React from "react";
-import "../UI/Cards/ArtWork.css";
-import "./Pages.css";
 import ButtonCorners from "../UI/Buttons/ButtonCorners";
-import ButtonTxt from "../UI/Buttons/ButtonTxt";
+import BuyTicket from "../UI/Buttons/BuyTicket";
 import Count from "../UI/Cards/Count";
+import TpBid from "../UI/Cards/TpBid";
 
 const Home = () => {
   return (
@@ -22,9 +21,9 @@ const Home = () => {
             with easisest and finest platform in trading cryptocurrency.
           </h3>
           <div className="HomeLeftBTN">
-            <ButtonCorners>Explore</ButtonCorners>
+            <ButtonCorners>BookShelf</ButtonCorners>
             <div style={{ padding: "5px 30px" }}>
-              <ButtonTxt>Other</ButtonTxt>
+              <BuyTicket />
             </div>
           </div>
           <div style={{ marginTop: "30px" }}>
@@ -33,13 +32,15 @@ const Home = () => {
         </div>
         <div className="SpaceBeetwin"></div>
         <div className="HomeBid">
-          <video autoPlay loop muted>
-            <source src="lk" type="video/mov" />
-            Your browser does not support HTML5 video.
-          </video>
+          <TpBid />
         </div>
       </div>
       <hr className="HomeSection1" />
+      <div>
+        <center>
+          <h1>Top sellers</h1>
+        </center>
+      </div>
     </>
   );
 };

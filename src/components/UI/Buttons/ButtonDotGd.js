@@ -1,5 +1,4 @@
 import React from "react";
-import "./Buttons.css";
 
 function ButtonDotGd({ children }) {
   return (

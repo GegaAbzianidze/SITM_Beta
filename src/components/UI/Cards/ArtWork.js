@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {db} from '../../Server-side/Firebase-config';
 import { collection, onSnapshot, query } from "firebase/firestore";
-import './ArtWork.css';
 import ButtonFullGd from "../Buttons/ButtonFullGd";
 
 function ArtWork() {

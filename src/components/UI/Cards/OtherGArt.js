@@ -1,5 +1,4 @@
 import React from "react";
-import './ArtWork.css';
 import ButtonFullGd from "../Buttons/ButtonFullGd";
 
 function OtherGArt() {
