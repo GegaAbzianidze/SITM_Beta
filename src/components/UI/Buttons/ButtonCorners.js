@@ -1,9 +1,10 @@
 import React from "react";
+import "./Buttons.css";
 
-function ButtonCorner({ children }) {
+function ButtonCorner( {children} ) {
   return (
     <div>
-      <button className="ButtonCorners"> {children} </button>
+      <button className="ButtonCorners" > {children} </button>
     </div>
   );
 }

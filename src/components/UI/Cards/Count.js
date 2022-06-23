@@ -1,4 +1,5 @@
 import React from 'react'
+import './ArtWork.css'
 
 const Rule = ({ color }) => (
   <hr

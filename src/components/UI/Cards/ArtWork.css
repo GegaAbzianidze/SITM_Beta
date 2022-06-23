@@ -1,0 +1,292 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap');
+
+.artwork{
+    background-color: aliceblue;
+    width: fit-content;
+    font-family: 'Urbanist', sans-serif;
+    margin: 20px;
+}
+
+.flxx{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.artwork--TP{
+    width: fit-content;
+    font-family: 'Urbanist', sans-serif;
+    margin: 20px;
+}
+
+.artwork__info{
+    background: rgb(22,33,55);
+    background: -moz-linear-gradient(137deg, rgba(22,33,55,1) 0%, rgba(74,90,115,1) 100%);
+    background: -webkit-linear-gradient(137deg, rgba(22,33,55,1) 0%, rgba(74,90,115,1) 100%);
+    background: linear-gradient(137deg, rgba(22,33,55,1) 0%, rgba(74,90,115,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#162137",endColorstr="#4a5a73",GradientType=1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin-top: -5px;
+    color: white;
+}
+.artwork__info--BF{
+    background: rgb(22,33,55);
+    background: -moz-linear-gradient(137deg, rgba(22,33,55,1) 0%, rgba(74,90,115,1) 100%);
+    background: -webkit-linear-gradient(137deg, rgba(22,33,55,1) 0%, rgba(74,90,115,1) 100%);
+    background: linear-gradient(137deg, rgba(22,33,55,1) 0%, rgba(74,90,115,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#162137",endColorstr="#4a5a73",GradientType=1);
+    align-items: center;
+    width: 300PX;
+    height: 270px;
+    padding: 0.5rem;
+    margin-top: -5px;
+    color: white;
+}
+
+.artist__info{
+    background: rgb(22,33,55);
+    background: -moz-linear-gradient(137deg, rgba(22,33,55,1) 0%, rgba(74,90,115,1) 100%);
+    background: -webkit-linear-gradient(137deg, rgba(22,33,55,1) 0%, rgba(74,90,115,1) 100%);
+    background: linear-gradient(137deg, rgba(22,33,55,1) 0%, rgba(74,90,115,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#162137",endColorstr="#4a5a73",GradientType=1);
+    margin-top: -30px;
+}
+
+.artwork__info--TP{
+    margin-top: -80px;
+    margin-left: 180px;
+    width: 400px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    overflow: hidden;
+    color: white;
+}
+
+.artwork__image--img{
+    height: 400px;
+}
+
+.artwork__image--img--Art{
+    height: 100px;
+}
+.artist__info--img--Art--profile{
+    height: 100px;
+    box-shadow: inset 0 0 0.5rem 0 rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.artwork__info__title{
+    font-size: 8px;
+    color: white;
+}
+
+.artwork__info__price h4{
+    font-size: 10px;
+    margin-bottom: -13px;
+} 
+.artwork__info__price {
+    margin-top: 25px;
+}
+
+.artwork__info__end h4{
+    font-size: 15px;
+    margin-bottom: -17px;
+    font-weight: lighter;
+} 
+.artwork__info__end {
+    margin-top: -10px;
+} 
+
+.artwork__info__end {
+    justify-content: center;
+    text-align: center;
+} 
+
+.artwork__info__Buynow{
+    margin-top: 30px;
+}
+
+.artwork__info__Buynow--read{
+    margin-top: 45px;
+    margin-left: -130px;
+}
+
+.profile{
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user{
+    display: flex;
+    text-align: center;
+}
+
+.Username{
+    color: rgba(5,252,146,1);
+    margin-left: 5px;
+    margin-top: 14px;
+    font-size: 12px;
+}
+
+.pricevalue{
+    display: flex;
+}
+
+.USD{
+    font-size: 15px;
+    margin-top: 28px;
+}
+
+.clock{
+    display: flex;
+    font-weight: lighter;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+}
+
+.clock h2:nth-child(2),
+.clock h2:nth-child(3){
+    margin-left: 25px;
+}
+
+.clockword{
+    display: flex;
+    font-weight: lighter;
+    justify-content: center;
+    text-align: center;
+    font-size: 5px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.clockword h2:nth-child(2),
+.clockword h2:nth-child(3){
+    margin-left: 25px;
+}
+
+.artpiece{
+    height: 400px;
+    --g: #000, #0000 1deg 179deg,#000 180deg;
+    --mask:
+      conic-gradient(from -135deg at top    40px left  40px,var(--g)) 0    0   /100% 100% no-repeat;	
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+}
+
+.numbers{
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.flrPrice{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.NNames{
+    
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.NNames h3{
+    margin-left: 25px;
+}
+
+.Name{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.artist__info--text{
+    color: rgba(5,252,146,1);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.Fbutton{
+    justify-content: center;
+    display: flex;
+    margin-top: 5px;
+}
+
+.spaceF{
+    height: 25px;
+}
+
+.CubeWIcon{
+    height: 60px;
+    width: 60px;
+    background: linear-gradient(to left, rgba(8,228,242,1), rgba(5,252,146,1));
+    border-radius: 8px;
+}
+
+.artwork__info--BF h2{
+    margin-top: 30px;
+}
+
+.artwork__info--BF p{
+    margin-top: 50px;
+}
+
+.bTR{
+    margin-top: -29px;
+    margin-left: 52px;
+}
+
+.CubeWIcon svg{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.Count{
+    color: white;
+    display: flex;
+    width: 400px;
+    text-align: center;
+    font-family: 'Urbanist', monospace;
+}
+.Count h4{
+    color: rgb(180, 180, 180);
+}
+.Count hr{
+     height: 60px;
+     margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .artwork__info--TP{
+        margin-top: -80px;
+        margin-left: 15px;
+    }
+}

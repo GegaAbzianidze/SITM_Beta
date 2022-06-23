@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "../Navbar/index";
 import Home from "../Pages";
@@ -8,9 +8,9 @@ import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 import Sidebar from "../Sidebar";
 import SignIn from "../Pages/SignIn";
+import "./bg.css";
 import BookShelf from "../Pages/BookShelf";
 import WritersPage from "../Pages/WritersPage";
-import TKT from "../Pages/TKT";
 
 const NavImport = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +34,6 @@ const NavImport = () => {
           <Route path="/bookshelf" element={<BookShelf />} />
           <Route path="/writer" element={<WritersPage />} />
           <Route path="/mybooks" element={<MyBooks />} />
-          <Route path="/tkt" element={<TKT />} />
         </Routes>
       </Router>
 

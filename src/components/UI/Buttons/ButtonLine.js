@@ -1,4 +1,6 @@
 import React from "react";
+import "./Buttons.css";
+
 function ButtonLine({ children }) {
   return (
     <div>

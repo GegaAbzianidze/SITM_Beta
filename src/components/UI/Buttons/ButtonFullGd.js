@@ -1,9 +1,10 @@
 import React from "react";
+import "./Buttons.css";
 
-function ButtonFullGd({ children }) {
+function ButtonFullGd( {children} ) {
   return (
     <div>
-      <button className="ButtonFullGradient"> {children} </button>
+      <button className="ButtonFullGradient" > {children} </button>
     </div>
   );
 }
